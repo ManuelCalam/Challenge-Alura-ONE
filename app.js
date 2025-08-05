@@ -1,7 +1,7 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 let friends = [];
 
-function addFriend(name) {
+function addFriend() {
     let newFriend = document.querySelector('#amigo').value;
     if (newFriend === '' || newFriend.trim() === '') {
         alert('Por favor, ingresa un nombre.');
@@ -13,9 +13,9 @@ function addFriend(name) {
         let listItem = document.createElement('li');
         listItem.textContent = newFriend;
         friendList.appendChild(listItem);
-        document.querySelector('#amigo').value = ''; 
     }
 
+    document.querySelector('#amigo').value = '';
     // console.log(friends);
 }
 
@@ -28,13 +28,24 @@ function drawFriend() {
     let resultList = document.querySelector('.result-list');
     resultList.textContent = `El amigo secreto es: ${friends[randomWinnerIndex]}`;
 
-    // console.log(randomWinnerIndex)
-    // console.log(friends[randomWinnerIndex]);
+    // console.log('Índice del ganador:', randomWinnerIndex);
+    // console.log('Amigo secreto:', friends[randomWinnerIndex]);
+
+    // Eliminar el amigo secreto de la lista para que no pueda ser seleccionado nuevamente
+    friends.splice(randomWinnerIndex, 1);
+    let friendList = document.querySelector('.name-list');
+    friendList.removeChild(friendList.childNodes[randomWinnerIndex]);
+
 }
 
 
 function restartRaffle() {
     friends = [];
+    clearLabels();
+}
+
+function clearLabels(){
+
     document.querySelector('.name-list').innerHTML = '';
     document.querySelector('.result-list').innerHTML = '';
 }
