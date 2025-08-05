@@ -21,4 +21,11 @@ Ingresa los nombres en la casilla y añadelos a la lista con el botón "Añadir"
 Procura no añadir un amigo dejando vacía la casilla!
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/9aa2dc04-4d2f-4f57-8e27-3a4844572b98" />
 
+Con el botón "Sortear amigo" se escogerá de manera aleatoria entre los nombres de la lista y se mostrará en pantalla el ganador
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/c4767a8b-4f60-40a6-8f1a-6c44b0fa3089" />
+
+Para volver a iniciar desde cero solo se necesita hacer click en el botón "Reiniciar sorteo"
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/36197843-7daa-4051-9b30-17d7c961ca2f" />
+
+
 
