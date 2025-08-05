@@ -41,11 +41,6 @@ function drawFriend() {
 
 function restartRaffle() {
     friends = [];
-    clearLabels();
-}
-
-function clearLabels(){
-
     document.querySelector('.name-list').innerHTML = '';
     document.querySelector('.result-list').innerHTML = '';
 }
