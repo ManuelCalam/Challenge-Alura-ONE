@@ -3,7 +3,7 @@ let friends = [];
 
 function addFriend(name) {
     let newFriend = document.querySelector('#amigo').value;
-    if (newFriend === '') {
+    if (newFriend === '' || newFriend.trim() === '') {
         alert('Por favor, ingresa un nombre.');
     } else if (friends.includes(newFriend)) {
         alert('Este amigo ya está en la lista.');
